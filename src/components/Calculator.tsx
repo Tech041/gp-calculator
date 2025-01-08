@@ -83,7 +83,7 @@ const Calculator = () => {
           </label>
           <input
             onChange={(e) => setEnglishGrade(parseInt(e.target.value))}
-            type="text"
+            type="number"
             id="grade"
             className="border-2 w-20 flex-1 "
           />
@@ -94,7 +94,7 @@ const Calculator = () => {
           </label>
           <input
             onChange={(e) => setEnglishCreditLoad(parseInt(e.target.value))}
-            type="text"
+            type="number"
             id="credit-load"
             className="border-2 w-20 flex-1 "
           />
@@ -112,7 +112,7 @@ const Calculator = () => {
           </label>
           <input
             onChange={(e) => setMathsGrade(parseInt(e.target.value))}
-            type="text"
+            type="number"
             id="grade"
             className="border-2 w-20  flex-1"
           />
@@ -123,7 +123,7 @@ const Calculator = () => {
           </label>
           <input
             onChange={(e) => setMathsCreditLoad(parseInt(e.target.value))}
-            type="text"
+            type="number"
             id="credit-load"
             className="border-2 w-20 flex-1 "
           />
@@ -141,7 +141,7 @@ const Calculator = () => {
           </label>
           <input
             onChange={(e) => setBiologyGrade(parseInt(e.target.value))}
-            type="text"
+            type="number"
             id="grade"
             className="border-2 w-20  flex-1"
           />
@@ -152,7 +152,7 @@ const Calculator = () => {
           </label>
           <input
             onChange={(e) => setBiologyCreditLoad(parseInt(e.target.value))}
-            type="text"
+            type="number"
             id="credit-load"
             className="border-2 w-20 flex-1 "
           />
@@ -170,7 +170,7 @@ const Calculator = () => {
           </label>
           <input
             onChange={(e) => setChemistryGrade(parseInt(e.target.value))}
-            type="text"
+            type="number"
             id="grade"
             className="border-2 w-20  flex-1"
           />
@@ -181,7 +181,7 @@ const Calculator = () => {
           </label>
           <input
             onChange={(e) => setChemistryCreditLoad(parseInt(e.target.value))}
-            type="text"
+            type="number"
             id="credit-load"
             className="border-2 w-20 flex-1 "
           />
@@ -199,7 +199,7 @@ const Calculator = () => {
           </label>
           <input
             onChange={(e) => setGeographyGrade(parseInt(e.target.value))}
-            type="text"
+            type="number"
             id="grade"
             className="border-2 w-20  flex-1"
           />
@@ -210,7 +210,7 @@ const Calculator = () => {
           </label>
           <input
             onChange={(e) => setGeographyCreditLoad(parseInt(e.target.value))}
-            type="text"
+            type="number"
             id="credit-load"
             className="border-2 w-20 flex-1 "
           />
@@ -228,7 +228,7 @@ const Calculator = () => {
           </label>
           <input
             onChange={(e) => setEconomicsGrade(parseInt(e.target.value))}
-            type="text"
+            type="number"
             id="grade"
             className="border-2 w-20  flex-1"
           />
@@ -239,7 +239,7 @@ const Calculator = () => {
           </label>
           <input
             onChange={(e) => setEconomicsCreditLoad(parseInt(e.target.value))}
-            type="text"
+            type="number"
             id="credit-load"
             className="border-2 w-20 flex-1 "
           />
@@ -257,7 +257,7 @@ const Calculator = () => {
           </label>
           <input
             onChange={(e) => setAgricultureGrade(parseInt(e.target.value))}
-            type="text"
+            type="number"
             id="grade"
             className="border-2 w-20  flex-1"
           />
@@ -268,7 +268,7 @@ const Calculator = () => {
           </label>
           <input
             onChange={(e) => setAgricultureCreditLoad(parseInt(e.target.value))}
-            type="text"
+            type="number"
             id="credit-load"
             className="border-2 w-20 flex-1 "
           />
@@ -286,7 +286,7 @@ const Calculator = () => {
           </label>
           <input
             onChange={(e) => setHistoryGrade(parseInt(e.target.value))}
-            type="text"
+            type="number"
             id="grade"
             className="border-2 w-20  flex-1"
           />
@@ -297,7 +297,7 @@ const Calculator = () => {
           </label>
           <input
             onChange={(e) => setHistroyCreditLoad(parseInt(e.target.value))}
-            type="text"
+            type="number"
             id="credit-load"
             className="border-2 w-20 flex-1 "
           />
@@ -315,7 +315,7 @@ const Calculator = () => {
           </label>
           <input
             onChange={(e) => setPhysicsGrade(parseInt(e.target.value))}
-            type="text"
+            type="number"
             id="grade"
             className="border-2 w-20  flex-1"
           />
@@ -326,7 +326,7 @@ const Calculator = () => {
           </label>
           <input
             onChange={(e) => setPhysicsCreditLoad(parseInt(e.target.value))}
-            type="text"
+            type="number"
             id="credit-load"
             className="border-2 w-20 flex-1 "
           />
