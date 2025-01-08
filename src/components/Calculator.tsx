@@ -1,8 +1,8 @@
 "use client";
-import React, { useState } from "react";
+import { ReactNode, useState } from "react";
 
 const Calculator = () => {
-  const [data, setData] = useState([]);
+  const [data, setData] = useState<ReactNode>([]);
   const [englishGrade, setEnglishGrade] = useState<number>();
   const [englishCreditLoad, setEnglishCreditLoad] = useState<number>();
   const [mathsGrade, setMathsGrade] = useState<number>();
@@ -49,7 +49,7 @@ const Calculator = () => {
     // console.log(totalCredit);
 
     const productOfGradeAndCreditLoad = CreditArr.map(
-      (item: any, index) => item * gradeArr[index]
+      (item, index) => item * gradeArr[index]
     );
 
     const sumProduct = productOfGradeAndCreditLoad.reduce(
