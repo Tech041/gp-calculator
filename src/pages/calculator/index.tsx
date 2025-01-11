@@ -1,6 +1,7 @@
 "use client";
 import { ReactNode, useState } from "react";
 import { Link } from "react-router-dom";
+import { toast } from "react-toastify";
 
 const Calculator = () => {
   const [data, setData] = useState<ReactNode>([]);
@@ -59,6 +60,9 @@ const Calculator = () => {
     );
     const calc = sumProduct / totalCredit;
     setData(calc);
+    if (calc > 0) {
+      toast.success(`Your CGPA is ${calc}`);
+    }
   };
 
   return (

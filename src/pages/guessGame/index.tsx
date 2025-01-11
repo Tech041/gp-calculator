@@ -28,6 +28,7 @@ const GuessGame = () => {
     }
     if (randomNumber === input) {
       setCorrectResult("Correct !");
+      toast.success("Congratulations,you won !!!");
       setRandomNumber(0);
       setInCorrectResult("");
     } else {
@@ -59,16 +60,16 @@ const GuessGame = () => {
           <p className="text-center text-green-500 font-bold text-xl">
             Rules of the game
           </p>
-          <p className="text-center text-red-600 ">
+          <p className="text-center text-gray-200 ">
             No 1 rule is that you must click on start only once to initiate the
-            memory to create an a number on which your guess is based.
+            memory to create a number on which your guess is based.
           </p>
-          <p className="text-center text-red-600">
+          <p className="text-center text-gray-200 ">
             No 2 rule is that you then start entering random rumbers and
             clicking on guess button upon each entry.
           </p>
         </div>
-        <p className=" flex flex-col gap-2 justify-center items-center text-2xl text-white my-5">
+        <p className=" flex flex-col gap-2 justify-center items-center text-2xl text-orange-400 my-5">
           <span className=""> Guess a number between </span>
           <span className="">1 and 10 inclusive</span>
         </p>
