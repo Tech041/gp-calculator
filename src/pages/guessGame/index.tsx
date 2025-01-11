@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { toast } from "react-toastify";
 
 const GuessGame = () => {
   const [randomNumber, setRandomNumber] = useState<number>();
@@ -17,10 +18,17 @@ const GuessGame = () => {
   };
   const guessNumber = () => {
     if (!input) {
+      toast.error("Input is empty");
+      return;
+    }
+    if (!randomNumber) {
+      toast.error("Click start before guessing");
+      setInput(0);
       return;
     }
     if (randomNumber === input) {
       setCorrectResult("Correct !");
+      setRandomNumber(0);
       setInCorrectResult("");
     } else {
       setInCorrectResult("Incorrect, continue guessing ");
